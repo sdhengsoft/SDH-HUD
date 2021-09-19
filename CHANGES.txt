@@ -1,6 +1,10 @@
-V-1.03
+2021.09.19	V-1.04
+  - Driver ahead time was not using R3E rawdata value when available. Fixed.
+  - Grouped tyre LEDs so that they can be hidden for non-R3E game play.
+  
+2021.09.18	V-1.03
   - Fuel to fill estimate needed text colour swapped.
-  - (Experimental) Added FL/FR/RL/RR tire LEDs for:
+  - (Experimental) Added FL/FR/RL/RR tyre LEDs for:
 	- Low Grip (Blue)
     - Lockup   (Red)
 	- Flatspot (White)
@@ -11,7 +15,7 @@ V-1.03
   - Added R3E code for ahead/behind deltas.
   - Last lap and average fuel consuption value code needed swapping.
   - Changed LED type and added red Shift2 mode.
-  - Experimental wheel lock LEDs.
+  - Experimental tyre lock LEDs.
 
 2021.09.13	V-1.01
   - Added current and max incident points.
