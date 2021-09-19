@@ -1,5 +1,6 @@
 2021.09.19	V-1.04
   - Driver ahead time was not using R3E rawdata value when available. Fixed.
+  - Driver R3E rawdata ahead/behind disabled during leaderboard challenge due to invalid data.
   - Grouped tyre LEDs so that they can be hidden for non-R3E game play.
   
 2021.09.18	V-1.03
