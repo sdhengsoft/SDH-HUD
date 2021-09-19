@@ -1,7 +1,7 @@
 {
   "$id": "1",
   "Version": 2,
-  "Id": "76cdb423-fca8-4807-985b-34e57a85e9fc",
+  "Id": "54a65932-3707-421a-97e6-d10f96fb58f8",
   "BaseHeight": 255,
   "BaseWidth": 775,
   "BackgroundColor": "#FF000000",
@@ -5277,7 +5277,7 @@
                         "Formula": {
                           "$id": "428",
                           "Interpreter": 1,
-                          "Expression": "var tGap;\r\nif ( $prop('DataCorePlugin.CurrentGame') == 'RRRE') {\r\n  tGap = $prop('GameRawData.TimeDeltaFront');\r\n  if ( tGap < 0) tGap = 0;\r\n  tGap *= -1;\r\n}\r\nelse {\r\n  tGap = $prop( 'PersistantTrackerPlugin.DriverAhead_00_Gap');\r\n}\r\n\r\nif ( tGap == null) return '-';\r\nif ( tGap == 0)    return '';\r\nif ( tGap < -99.99 || tGap > 99.99) return '------';\r\nreturn format( tGap, '0.00', 1);\r\n"
+                          "Expression": "var tGap;\r\nif ( $prop('DataCorePlugin.CurrentGame') == 'RRRE' &&\r\n     $prop('GameRawData.TimeDeltaFront') >= 0) {\r\n  tGap = $prop('GameRawData.TimeDeltaFront');\r\n  if ( tGap < 0) tGap = 0;\r\n  tGap *= -1;\r\n}\r\nelse {\r\n  tGap = $prop( 'PersistantTrackerPlugin.DriverAhead_00_Gap');\r\n}\r\n\r\nif ( tGap == null) return '-';\r\nif ( tGap == 0)    return '';\r\nif ( tGap < -99.99 || tGap > 99.99) return '------';\r\nreturn format( tGap, '0.00', 1);\r\n"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "Text"
@@ -6610,11 +6610,11 @@
                       "$id": "528",
                       "Text": {
                         "$id": "529",
-                        "FormatString": "0.00",
+                        "FormatString": "",
                         "Formula": {
                           "$id": "530",
                           "Interpreter": 1,
-                          "Expression": "var tGap;\r\nif ( $prop('DataCorePlugin.CurrentGame') == 'RRRE') {\r\n  tGap = $prop('GameRawData.TimeDeltaBehind');\r\n  if ( tGap < 0) tGap = 0;\r\n}\r\nelse {\r\n  tGap = $prop( 'PersistantTrackerPlugin.DriverBehind_00_Gap');\r\n}\r\n\r\nif ( tGap == null) return '-';\r\nif ( tGap == 0)    return '';\r\nif ( tGap < -99.99 || tGap > 99.99) return '------';\r\nreturn format( tGap, '0.00', 1);\r\n"
+                          "Expression": "var tGap;\r\nif ( $prop('DataCorePlugin.CurrentGame') == 'RRRE' &&\r\n     $prop('GameRawData.TimeDeltaBehind') >= 0) {\r\n  tGap = $prop('GameRawData.TimeDeltaBehind');\r\n  if ( tGap < 0) tGap = 0;\r\n}\r\nelse {\r\n  tGap = $prop( 'PersistantTrackerPlugin.DriverBehind_00_Gap');\r\n}\r\n\r\nif ( tGap == null) return '-';\r\nif ( tGap == 0)    return '';\r\nif ( tGap < -99.99 || tGap > 99.99) return '------';\r\nreturn format( tGap, '0.00', 1);\r\n"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "Text"
