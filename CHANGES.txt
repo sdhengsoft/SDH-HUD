@@ -1,3 +1,6 @@
+2021.09.20	V-1.06
+  - Fuel and Fuel Laps required values not formatted correctly. Fixed.
+  - Fuel Laps required colour not set correctly.
 2021.09.20	V-1.05
   - Fixed TC and EngineMap values not displaying correctly.
 
