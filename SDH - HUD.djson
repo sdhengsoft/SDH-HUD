@@ -1,7 +1,7 @@
 {
   "$id": "1",
   "Version": 2,
-  "Id": "b16896a4-8a31-42fd-ba69-bb8521ca1a8a",
+  "Id": "f64f60b5-ca3a-41ff-9ed3-7603238504cb",
   "BaseHeight": 255,
   "BaseWidth": 775,
   "BackgroundColor": "#FF000000",
@@ -3631,7 +3631,7 @@
                 }
               },
               "RenderingSkip": 0,
-              "ShowSelection": true,
+              "ShowSelection": false,
               "CanResize": false,
               "Childrens": {
                 "$id": "301",
@@ -4118,10 +4118,10 @@
                       "$id": "335",
                       "Text": {
                         "$id": "336",
-                        "FormatString": "",
+                        "FormatString": "0",
                         "Formula": {
                           "$id": "337",
-                          "Expression": "format((timespantoseconds([DataCorePlugin.Computed.Fuel_RemainingTime])-timespantoseconds([DataCorePlugin.GameData.NewData.SessionTimeLeft]))/timespantoseconds([DataCorePlugin.GameData.NewData.BestLapTime]), 0.0, 1)"
+                          "Expression": "format((timespantoseconds([DataCorePlugin.Computed.Fuel_RemainingTime])-timespantoseconds([DataCorePlugin.GameData.NewData.SessionTimeLeft]))/timespantoseconds([DataCorePlugin.GameData.NewData.BestLapTime]), '0.0', 1)"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "Text"
@@ -4130,7 +4130,7 @@
                         "$id": "338",
                         "Formula": {
                           "$id": "339",
-                          "Expression": "if(timespantoseconds([DataCorePlugin.Computed.Fuel_RemainingTime])-timespantoseconds([DataCorePlugin.GameData.NewData.SessionTimeLeft])>=0,'FFCCCCCC','FFAC0000')"
+                          "Expression": "if(timespantoseconds([DataCorePlugin.Computed.Fuel_RemainingTime])-timespantoseconds([DataCorePlugin.GameData.NewData.SessionTimeLeft])>=0,'#FFCCCCCC','#FFAC0000')"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "TextColor"
@@ -4263,7 +4263,7 @@
                     "BorderTop": 0,
                     "Id": "59454639-c79b-4da3-b388-29ac851a9cf3",
                     "IsFreezed": false,
-                    "IsSelected": false,
+                    "IsSelected": true,
                     "Name": "FuelNeededValue",
                     "RenderingSkip": 0,
                     "Sid": 25,
@@ -4274,7 +4274,7 @@
                         "FormatString": "",
                         "Formula": {
                           "$id": "349",
-                          "Expression": "format((0-((timespantoseconds([DataCorePlugin.Computed.Fuel_RemainingTime])-timespantoseconds([DataCorePlugin.GameData.NewData.SessionTimeLeft]))/timespantoseconds([DataCorePlugin.GameData.NewData.BestLapTime]))*[DataCorePlugin.Computed.Fuel_LitersPerLap]), 0.0, 1)"
+                          "Expression": "format((0-((timespantoseconds([DataCorePlugin.Computed.Fuel_RemainingTime])-timespantoseconds([DataCorePlugin.GameData.NewData.SessionTimeLeft]))/timespantoseconds([DataCorePlugin.GameData.NewData.BestLapTime]))*[DataCorePlugin.Computed.Fuel_LitersPerLap]), '0.0', 1)"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "Text"
@@ -4549,7 +4549,7 @@
                 }
               },
               "RenderingSkip": 0,
-              "ShowSelection": false,
+              "ShowSelection": true,
               "CanResize": false,
               "Childrens": {
                 "$id": "373",
@@ -4613,7 +4613,7 @@
                     "BorderTop": 0,
                     "Id": "69d164e2-0a32-4f80-a523-2ae8da2a2085",
                     "IsFreezed": false,
-                    "IsSelected": true,
+                    "IsSelected": false,
                     "Name": "TractionControlValue",
                     "RenderingSkip": 0,
                     "Sid": 0,
