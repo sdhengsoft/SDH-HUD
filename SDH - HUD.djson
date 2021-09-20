@@ -1,7 +1,7 @@
 {
   "$id": "1",
   "Version": 2,
-  "Id": "54a65932-3707-421a-97e6-d10f96fb58f8",
+  "Id": "b16896a4-8a31-42fd-ba69-bb8521ca1a8a",
   "BaseHeight": 255,
   "BaseWidth": 775,
   "BackgroundColor": "#FF000000",
@@ -4549,7 +4549,7 @@
                 }
               },
               "RenderingSkip": 0,
-              "ShowSelection": true,
+              "ShowSelection": false,
               "CanResize": false,
               "Childrens": {
                 "$id": "373",
@@ -4613,7 +4613,7 @@
                     "BorderTop": 0,
                     "Id": "69d164e2-0a32-4f80-a523-2ae8da2a2085",
                     "IsFreezed": false,
-                    "IsSelected": false,
+                    "IsSelected": true,
                     "Name": "TractionControlValue",
                     "RenderingSkip": 0,
                     "Sid": 0,
@@ -4623,7 +4623,8 @@
                         "$id": "378",
                         "Formula": {
                           "$id": "379",
-                          "Expression": "if([TCLevel] = -1,\"-\",[TCLevel])"
+                          "Interpreter": 1,
+                          "Expression": "if ( $prop('TCLevel') == -1) {\r\n  return '-';\r\n}\r\n\r\nreturn $prop('TCLevel')\r\n"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "Text"
@@ -5125,7 +5126,7 @@
                 }
               },
               "RenderingSkip": 0,
-              "ShowSelection": false,
+              "ShowSelection": true,
               "CanResize": false,
               "Childrens": {
                 "$id": "416",
@@ -5265,7 +5266,7 @@
                     "BorderTop": 0,
                     "Id": "371ad6bc-f405-4d9a-bbf9-d15c83f9a435",
                     "IsFreezed": false,
-                    "IsSelected": true,
+                    "IsSelected": false,
                     "Name": "D.AheadValue",
                     "RenderingSkip": 10,
                     "Sid": 28,
@@ -6337,7 +6338,8 @@
                         "$id": "508",
                         "Formula": {
                           "$id": "509",
-                          "Expression": "if([EngineMap] = -1,\"-\",[EngineMap])"
+                          "Interpreter": 1,
+                          "Expression": "if ( $prop('EngineMap') == -1) {\r\n  return '-';\r\n}\r\n\r\nreturn $prop('EngineMap');\r\n"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "Text"
