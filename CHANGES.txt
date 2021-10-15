@@ -1,4 +1,8 @@
-2002.09.28	V-1.07
+2021.10.15	V-1.08
+  - Add PitLimiter indicator (flashing red filled circle) to flags indicator.
+  - Changed current lap time colour.
+
+2021.09.28	V-1.07
   - Lap times to 1000th of a second.
   - Ahead/behind driver names reduce font size when name greater than 15.
   - Minor change to incident points visibility.
