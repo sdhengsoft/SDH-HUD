@@ -1,3 +1,7 @@
+2021.11.06	V-1.09
+  - Sector time code updated after SimHub change from V-7.4.8 where it was reported:
+    - Fixed some sector data regression which were giving lap time at sector instead of time of sector.
+
 2021.10.15	V-1.08
   - Add PitLimiter indicator (flashing red filled circle) to flags indicator.
   - Changed current lap time colour.

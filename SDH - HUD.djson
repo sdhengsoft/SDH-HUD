@@ -1,7 +1,7 @@
 {
   "$id": "1",
   "Version": 2,
-  "Id": "e3939f99-3518-4c90-9c56-84e0ca7c255c",
+  "Id": "99812d1c-71b6-492b-aa86-0bba094f689b",
   "BaseHeight": 255,
   "BaseWidth": 775,
   "BackgroundColor": "#FF000000",
@@ -149,7 +149,7 @@
                 }
               },
               "RenderingSkip": 0,
-              "ShowSelection": false,
+              "ShowSelection": true,
               "CanResize": false,
               "Childrens": {
                 "$id": "17",
@@ -181,7 +181,7 @@
                       }
                     },
                     "RenderingSkip": 0,
-                    "ShowSelection": false,
+                    "ShowSelection": true,
                     "CanResize": false,
                     "Childrens": {
                       "$id": "21",
@@ -284,7 +284,7 @@
                           "BorderTop": 0,
                           "Id": "def4f75a-affd-4817-a625-d03cc0aa1fbc",
                           "IsFreezed": false,
-                          "IsSelected": true,
+                          "IsSelected": false,
                           "Name": "Grip_Blue",
                           "RenderingSkip": 0,
                           "Sid": 0,
@@ -7919,7 +7919,7 @@
                 }
               },
               "RenderingSkip": 0,
-              "ShowSelection": true,
+              "ShowSelection": false,
               "CanResize": false,
               "Childrens": {
                 "$id": "647",
@@ -8571,7 +8571,7 @@
                       }
                     },
                     "RenderingSkip": 0,
-                    "ShowSelection": true,
+                    "ShowSelection": false,
                     "CanResize": false,
                     "Childrens": {
                       "$id": "706",
@@ -8771,7 +8771,7 @@
                               "Formula": {
                                 "$id": "722",
                                 "Interpreter": 1,
-                                "Expression": "var stime = timespantoseconds( $prop( 'Sector2Time'));\r\nif ( stime == null) {\r\n  stime = timespantoseconds( $prop( 'Sector2LastLapTime'));\r\n  if ( stime != null) {\r\n    stime -= timespantoseconds( $prop( 'Sector1LastLapTime'));\r\n  }\r\n}\r\n\r\nif ( stime == null) {\r\n  return '--.---';\r\n}\r\nreturn format( stime, '0.000');\r\n"
+                                "Expression": "var stime = timespantoseconds( $prop( 'Sector2Time'));\r\nif ( stime == null) {\r\n  stime = timespantoseconds( $prop( 'Sector2LastLapTime'));\r\n}\r\n\r\nif ( stime == null) {\r\n  return '--.---';\r\n}\r\nreturn format( stime, '0.000');\r\n"
                               },
                               "Mode": 2,
                               "TargetPropertyName": "Text"
@@ -8781,7 +8781,7 @@
                               "Formula": {
                                 "$id": "724",
                                 "Interpreter": 1,
-                                "Expression": "var stime = timespantoseconds( $prop( 'Sector2Time'));\r\nif ( stime == null) {\r\n  stime = timespantoseconds( $prop( 'Sector2LastLapTime'));\r\n  if ( stime != null) {\r\n    stime -= timespantoseconds( $prop( 'Sector1LastLapTime'));\r\n  }\r\n}\r\n\r\nvar bstime = timespantoseconds( $prop( 'Sector2BestLapTime'));\r\nif ( bstime != null) {\r\n  bstime -= timespantoseconds( $prop( 'Sector1BestLapTime'));\r\n}\r\n\r\nif ( stime != null && bstime != null &&\r\n     stime < bstime) {\r\n  return '#FF00AC00';\r\n}\r\nreturn '#FFCCCCCC';\r\n"
+                                "Expression": "var stime = timespantoseconds( $prop( 'Sector2Time'));\r\nif ( stime == null) {\r\n  stime = timespantoseconds( $prop( 'Sector2LastLapTime'));\r\n}\r\n\r\nvar bstime = timespantoseconds( $prop( 'Sector2BestLapTime'));\r\n\r\nif ( stime != null && bstime != null &&\r\n     stime < bstime) {\r\n  return '#FF00AC00';\r\n}\r\nreturn '#FFCCCCCC';\r\n"
                               },
                               "Mode": 2,
                               "TargetPropertyName": "TextColor"
@@ -8859,7 +8859,7 @@
                               "Formula": {
                                 "$id": "730",
                                 "Interpreter": 1,
-                                "Expression": "var stime = timespantoseconds( $prop( 'Sector2Time'));\r\nif ( stime == null) {\r\n  stime = timespantoseconds( $prop( 'Sector2LastLapTime')) ;\r\n  if ( stime != null) {\r\n   stime -= timespantoseconds( $prop( 'Sector1LastLapTime'));\r\n }\r\n}\r\n\r\nvar bstime = timespantoseconds( $prop( 'Sector2BestLapTime'));\r\nif ( bstime != null) {\r\n  bstime -= timespantoseconds( $prop( 'Sector1BestLapTime'));\r\n}\r\n\r\nif ( stime == null || bstime == null) {\r\n  return ''; \r\n}\r\nreturn '(' + format( stime - bstime, '0.00', 1) + ')';\r\n"
+                                "Expression": "var stime = timespantoseconds( $prop( 'Sector2Time'));\r\nif ( stime == null) {\r\n  stime = timespantoseconds( $prop( 'Sector2LastLapTime')) ;\r\n}\r\n\r\nvar bstime = timespantoseconds( $prop( 'Sector2BestLapTime'));\r\n\r\nif ( stime == null || bstime == null) {\r\n  return ''; \r\n}\r\nreturn '(' + format( stime - bstime, '0.00', 1) + ')';\r\n"
                               },
                               "Mode": 2,
                               "TargetPropertyName": "Text"
@@ -8869,7 +8869,7 @@
                               "Formula": {
                                 "$id": "732",
                                 "Interpreter": 1,
-                                "Expression": "var stime = timespantoseconds( $prop( 'Sector2Time'));\r\nif ( stime == null) {\r\n  stime = timespantoseconds( $prop( 'Sector2LastLapTime'))\r\n  if ( stime != null) {\r\n    stime -= timespantoseconds( $prop( 'Sector1LastLapTime'));\r\n  }\r\n}\r\n\r\nvar bstime = timespantoseconds( $prop( 'Sector2BestLapTime'));\r\nif ( bstime != null) {\r\n  bstime -= timespantoseconds( $prop( 'Sector1BestLapTime'));\r\n}\r\n\r\nif ( stime == null || bstime == null) {\r\n  return '#FFCCCCCC'; \r\n}\r\nif ( stime > bstime) {\r\n  return '#FFDAA520';\r\n}\r\nif ( stime < bstime) {\r\n  return '#FF00AC00';\r\n}\r\nreturn '#FFCCCCCC';\r\n"
+                                "Expression": "var stime = timespantoseconds( $prop( 'Sector2Time'));\r\nif ( stime == null) {\r\n  stime = timespantoseconds( $prop( 'Sector2LastLapTime'))\r\n}\r\n\r\nvar bstime = timespantoseconds( $prop( 'Sector2BestLapTime'));\r\n\r\nif ( stime == null || bstime == null) {\r\n  return '#FFCCCCCC'; \r\n}\r\nif ( stime > bstime) {\r\n  return '#FFDAA520';\r\n}\r\nif ( stime < bstime) {\r\n  return '#FF00AC00';\r\n}\r\nreturn '#FFCCCCCC';\r\n"
                               },
                               "Mode": 2,
                               "TargetPropertyName": "TextColor"
@@ -8947,7 +8947,7 @@
                               "Formula": {
                                 "$id": "738",
                                 "Interpreter": 1,
-                                "Expression": "var bstime = timespantoseconds( $prop( 'Sector2BestLapTime'));\r\nif ( bstime == null) {\r\n  return '--.---';\r\n}\r\nbstime -= timespantoseconds( $prop( 'Sector1BestLapTime'));\r\nreturn format( bstime, '0.000');\r\n"
+                                "Expression": "var bstime = timespantoseconds( $prop( 'Sector2BestLapTime'));\r\nif ( bstime == null) {\r\n  return '--.---';\r\n}\r\nreturn format( bstime, '0.000');\r\n"
                               },
                               "Mode": 2,
                               "TargetPropertyName": "Text"
@@ -8957,7 +8957,7 @@
                               "Formula": {
                                 "$id": "740",
                                 "Interpreter": 1,
-                                "Expression": "var stime = timespantoseconds( $prop( 'Sector2Time'));\r\nif ( stime == null) {\r\n  stime = timespantoseconds( $prop( 'Sector2LastLapTime'));\r\n  if ( stime != null) {\r\n    stime -= timespantoseconds( $prop( 'Sector1LastLapTime'));\r\n  }\r\n}\r\n\r\nvar bstime = timespantoseconds( $prop( 'Sector2BestLapTime'));\r\nif ( bstime != null) {\r\n  bstime -= timespantoseconds( $prop( 'Sector1BestLapTime'));\r\n}\r\n\r\nif ( stime  != null &&\r\n     bstime != null &&\r\n     stime  <  bstime) {\r\n  return '#FFCCCCCC';\r\n}\r\nreturn '#FF00AC00';\r\n"
+                                "Expression": "var stime = timespantoseconds( $prop( 'Sector2Time'));\r\nif ( stime == null) {\r\n  stime = timespantoseconds( $prop( 'Sector2LastLapTime'));\r\n}\r\n\r\nvar bstime = timespantoseconds( $prop( 'Sector2BestLapTime'));\r\n\r\nif ( stime  != null &&\r\n     bstime != null &&\r\n     stime  <  bstime) {\r\n  return '#FFCCCCCC';\r\n}\r\nreturn '#FF00AC00';\r\n"
                               },
                               "Mode": 2,
                               "TargetPropertyName": "TextColor"
@@ -9023,7 +9023,7 @@
                           "BorderTop": 0,
                           "Id": "cccb07fb-48b3-4d57-9156-2d1830b4b17c",
                           "IsFreezed": false,
-                          "IsSelected": false,
+                          "IsSelected": true,
                           "Name": "Sector2DeltaToBE",
                           "RenderingSkip": 0,
                           "Sid": 0,
@@ -9035,7 +9035,7 @@
                               "Formula": {
                                 "$id": "746",
                                 "Interpreter": 1,
-                                "Expression": "var stime = timespantoseconds( $prop( 'Sector2Time'));\r\nif ( stime == null) {\r\n  stime = timespantoseconds( $prop( 'Sector2LastLapTime'));\r\n  if ( stime != null) {\r\n   stime -= timespantoseconds( $prop( 'Sector1LastLapTime'));\r\n  }\r\n}\r\n\r\nvar bstime = $prop('GameRawData.BestIndividualSectorTimeSelf.Sector2');\r\n\r\nif ( stime == null || bstime == null || bstime < 0) {\r\n  return ''; \r\n}\r\nreturn '(' + format( stime - bstime, '0.00', 1) + ')';\r\n"
+                                "Expression": "var stime = timespantoseconds( $prop( 'Sector2Time'));\r\nif ( stime == null) {\r\n  stime = timespantoseconds( $prop( 'Sector2LastLapTime'));\r\n}\r\n\r\nvar bstime = $prop('GameRawData.BestIndividualSectorTimeSelf.Sector2');\r\n\r\nif ( stime == null || bstime == null || bstime < 0) {\r\n  return ''; \r\n}\r\nreturn '(' + format( stime - bstime, '0.00', 1) + ')';\r\n"
                               },
                               "Mode": 2,
                               "TargetPropertyName": "Text"
@@ -9045,7 +9045,7 @@
                               "Formula": {
                                 "$id": "748",
                                 "Interpreter": 1,
-                                "Expression": "var stime = timespantoseconds( $prop( 'Sector2Time'));\r\nif ( stime == null) {\r\n  stime = timespantoseconds( $prop( 'Sector2LastLapTime'));\r\n  if ( stime != null) {\r\n    stime -= timespantoseconds( $prop( 'Sector1LastLapTime'));\r\n  }\r\n}\r\n\r\nvar bstime = $prop('GameRawData.BestIndividualSectorTimeSelf.Sector2');\r\n\r\nif ( stime == null || bstime == null || bstime < 0) {\r\n  return '#FFCCCCCC'; \r\n}\r\nif ( stime > bstime) {\r\n  return '#FFDAA520';\r\n}\r\nif ( stime < bstime) {\r\n  return '#FF00AC00';\r\n}\r\nreturn '#FFCCCCCC';"
+                                "Expression": "var stime = timespantoseconds( $prop( 'Sector2Time'));\r\nif ( stime == null) {\r\n  stime = timespantoseconds( $prop( 'Sector2LastLapTime'));\r\n}\r\n\r\nvar bstime = $prop('GameRawData.BestIndividualSectorTimeSelf.Sector2');\r\n\r\nif ( stime == null || bstime == null || bstime < 0) {\r\n  return '#FFCCCCCC'; \r\n}\r\nif ( stime > bstime) {\r\n  return '#FFDAA520';\r\n}\r\nif ( stime < bstime) {\r\n  return '#FF00AC00';\r\n}\r\nreturn '#FFCCCCCC';"
                               },
                               "Mode": 2,
                               "TargetPropertyName": "TextColor"
@@ -9133,7 +9133,7 @@
                               "Formula": {
                                 "$id": "756",
                                 "Interpreter": 1,
-                                "Expression": "var stime = timespantoseconds( $prop( 'Sector2Time'));\r\nif ( stime == null) {\r\n  stime = timespantoseconds( $prop( 'Sector2LastLapTime'));\r\n  if ( stime != null) {\r\n    stime -= timespantoseconds( $prop( 'Sector1LastLapTime'));\r\n  }\r\n}\r\n\r\nvar bstime = $prop('GameRawData.BestIndividualSectorTimeSelf.Sector2');\r\n\r\nif ( stime  != null &&\r\n     bstime != null &&\r\n     bstime >  0    &&\r\n     stime  <  bstime) {\r\n  return '#FFCCCCCC';\r\n}\r\nreturn '#FFBA55D3';\r\n"
+                                "Expression": "var stime = timespantoseconds( $prop( 'Sector2Time'));\r\nif ( stime == null) {\r\n  stime = timespantoseconds( $prop( 'Sector2LastLapTime'));\r\n}\r\n\r\nvar bstime = $prop('GameRawData.BestIndividualSectorTimeSelf.Sector2');\r\n\r\nif ( stime  != null &&\r\n     bstime != null &&\r\n     bstime >  0    &&\r\n     stime  <  bstime) {\r\n  return '#FFCCCCCC';\r\n}\r\nreturn '#FFBA55D3';\r\n"
                               },
                               "Mode": 2,
                               "TargetPropertyName": "TextColor"
@@ -9391,7 +9391,7 @@
                               "Formula": {
                                 "$id": "777",
                                 "Interpreter": 1,
-                                "Expression": "var stime = timespantoseconds( $prop( 'Sector3LastLapTime'));\r\nif ( stime == null) {\r\n  return '--.---';\r\n}\r\nstime -= timespantoseconds( $prop( 'Sector2LastLapTime'));\r\n\r\nreturn format( stime, '0.000');\r\n"
+                                "Expression": "var stime = timespantoseconds( $prop( 'Sector3LastLapTime'));\r\nif ( stime == null) {\r\n  return '--.---';\r\n}\r\n\r\nreturn format( stime, '0.000');\r\n"
                               },
                               "Mode": 2,
                               "TargetPropertyName": "Text"
@@ -9401,7 +9401,7 @@
                               "Formula": {
                                 "$id": "779",
                                 "Interpreter": 1,
-                                "Expression": "var stime = timespantoseconds( $prop( 'Sector3LastLapTime'));\r\nif ( stime != null) {\r\n  stime -= timespantoseconds( $prop( 'Sector2LastLapTime'));\r\n}\r\n\r\nvar bstime = timespantoseconds( $prop( 'Sector3BestLapTime'));\r\nif ( bstime != null) {\r\n  bstime -= timespantoseconds( $prop( 'Sector2BestLapTime'));\r\n}\r\n\r\nif ( stime != null && bstime != null &&\r\n     stime < bstime) {\r\n  return '#FF00AC00';\r\n}\r\nreturn '#FFCCCCCC';\r\n"
+                                "Expression": "var stime  = timespantoseconds( $prop( 'Sector3LastLapTime'));\r\nvar bstime = timespantoseconds( $prop( 'Sector3BestLapTime'));\r\n\r\nif ( stime != null && bstime != null &&\r\n     stime < bstime) {\r\n  return '#FF00AC00';\r\n}\r\nreturn '#FFCCCCCC';\r\n"
                               },
                               "Mode": 2,
                               "TargetPropertyName": "TextColor"
@@ -9479,7 +9479,7 @@
                               "Formula": {
                                 "$id": "785",
                                 "Interpreter": 1,
-                                "Expression": "var stime = timespantoseconds( $prop( 'Sector3LastLapTime')) ;\r\nif ( stime != null) {\r\n  stime -= timespantoseconds( $prop( 'Sector2LastLapTime'));\r\n}\r\n\r\nvar bstime = timespantoseconds( $prop( 'Sector3BestLapTime'));\r\nif ( bstime != null) {\r\n  bstime -= timespantoseconds( $prop( 'Sector2BestLapTime'));\r\n}\r\n\r\nif ( stime == null || bstime == null) {\r\n  return ''; \r\n}\r\nreturn '(' + format( stime - bstime, '0.00', 1) + ')';\r\n"
+                                "Expression": "var stime  = timespantoseconds( $prop( 'Sector3LastLapTime')) ;\r\nvar bstime = timespantoseconds( $prop( 'Sector3BestLapTime'));\r\n\r\nif ( stime == null || bstime == null) {\r\n  return ''; \r\n}\r\nreturn '(' + format( stime - bstime, '0.00', 1) + ')';\r\n"
                               },
                               "Mode": 2,
                               "TargetPropertyName": "Text"
@@ -9489,7 +9489,7 @@
                               "Formula": {
                                 "$id": "787",
                                 "Interpreter": 1,
-                                "Expression": "stime = timespantoseconds( $prop( 'Sector3LastLapTime'))\r\nif ( stime != null) {\r\n  stime -= timespantoseconds( $prop( 'Sector2LastLapTime'));\r\n}\r\n\r\nvar bstime = timespantoseconds( $prop( 'Sector3BestLapTime'));\r\nif ( bstime != null) {\r\n  bstime -= timespantoseconds( $prop( 'Sector2BestLapTime'));\r\n}\r\n\r\nif ( stime == null || bstime == null) {\r\n  return '#FFCCCCCC'; \r\n}\r\nif ( stime > bstime) {\r\n  return '#FFDAA520';\r\n}\r\nif ( stime < bstime) {\r\n  return '#FF00AC00';\r\n}\r\nreturn '#FFCCCCCC';\r\n"
+                                "Expression": "var stime  = timespantoseconds( $prop( 'Sector3LastLapTime'))\r\nvar bstime = timespantoseconds( $prop( 'Sector3BestLapTime'));\r\n\r\nif ( stime == null || bstime == null) {\r\n  return '#FFCCCCCC'; \r\n}\r\nif ( stime > bstime) {\r\n  return '#FFDAA520';\r\n}\r\nif ( stime < bstime) {\r\n  return '#FF00AC00';\r\n}\r\nreturn '#FFCCCCCC';\r\n"
                               },
                               "Mode": 2,
                               "TargetPropertyName": "TextColor"
@@ -9567,7 +9567,7 @@
                               "Formula": {
                                 "$id": "793",
                                 "Interpreter": 1,
-                                "Expression": "var bstime = timespantoseconds( $prop( 'Sector3BestLapTime'));\r\nif ( bstime == null) {\r\n  return '--.---';\r\n}\r\nbstime -= timespantoseconds( $prop( 'Sector2BestLapTime'));\r\nreturn format( bstime, '0.000');\r\n"
+                                "Expression": "var bstime = timespantoseconds( $prop( 'Sector3BestLapTime'));\r\nif ( bstime == null) {\r\n  return '--.---';\r\n}\r\nreturn format( bstime, '0.000');\r\n"
                               },
                               "Mode": 2,
                               "TargetPropertyName": "Text"
@@ -9577,7 +9577,7 @@
                               "Formula": {
                                 "$id": "795",
                                 "Interpreter": 1,
-                                "Expression": "var stime = timespantoseconds( $prop( 'Sector3LastLapTime'));\r\nif ( stime != null) {\r\n  stime -= timespantoseconds( $prop( 'Sector2LastLapTime'));\r\n}\r\n\r\nvar bstime = timespantoseconds( $prop( 'Sector3BestLapTime'));\r\nif ( bstime != null) {\r\n  bstime -= timespantoseconds( $prop( 'Sector2BestLapTime'));\r\n}\r\n\r\nif ( stime  != null && bstime != null &&\r\n     stime < bstime) {\r\n  return '#FFCCCCCC';\r\n}\r\nreturn '#FF00AC00';\r\n"
+                                "Expression": "var stime  = timespantoseconds( $prop( 'Sector3LastLapTime'));\r\nvar bstime = timespantoseconds( $prop( 'Sector3BestLapTime'));\r\n\r\nif ( stime  != null && bstime != null &&\r\n     stime < bstime) {\r\n  return '#FFCCCCCC';\r\n}\r\nreturn '#FF00AC00';\r\n"
                               },
                               "Mode": 2,
                               "TargetPropertyName": "TextColor"
@@ -9655,7 +9655,7 @@
                               "Formula": {
                                 "$id": "801",
                                 "Interpreter": 1,
-                                "Expression": "var stime = timespantoseconds( $prop( 'Sector3LastLapTime'));\r\nif ( stime != null) {\r\n stime -= timespantoseconds( $prop( 'Sector2LastLapTime'));\r\n}\r\n\r\nvar bstime = $prop('GameRawData.BestIndividualSectorTimeSelf.Sector3');\r\n\r\nif ( stime == null || bstime == null || bstime < 0) {\r\n  return ''; \r\n}\r\nreturn '(' + format( stime - bstime, '0.00', 1) + ')';\r\n"
+                                "Expression": "var stime  = timespantoseconds( $prop( 'Sector3LastLapTime'));\r\nvar bstime = $prop('GameRawData.BestIndividualSectorTimeSelf.Sector3');\r\n\r\nif ( stime == null || bstime == null || bstime < 0) {\r\n  return ''; \r\n}\r\nreturn '(' + format( stime - bstime, '0.00', 1) + ')';\r\n"
                               },
                               "Mode": 2,
                               "TargetPropertyName": "Text"
@@ -9665,7 +9665,7 @@
                               "Formula": {
                                 "$id": "803",
                                 "Interpreter": 1,
-                                "Expression": "var stime = timespantoseconds( $prop( 'Sector3Time'));\r\nif ( stime == null) {\r\n  stime = timespantoseconds( $prop( 'Sector3LastLapTime'));\r\n  if ( stime != null) {\r\n    stime -= timespantoseconds( $prop( 'Sector2LastLapTime'));\r\n  }\r\n}\r\n\r\nvar bstime = $prop('GameRawData.BestIndividualSectorTimeSelf.Sector3');\r\n\r\nif ( stime == null || bstime == null || bstime < 0) {\r\n  return '#FFCCCCCC'; \r\n}\r\nif ( stime > bstime) {\r\n  return '#FFDAA520';\r\n}\r\nif ( stime < bstime) {\r\n  return '#FF00AC00';\r\n}\r\nreturn '#FFCCCCCC';"
+                                "Expression": "var stime = timespantoseconds( $prop( 'Sector3Time'));\r\nif ( stime == null) {\r\n  stime = timespantoseconds( $prop( 'Sector3LastLapTime'));\r\n}\r\n\r\nvar bstime = $prop('GameRawData.BestIndividualSectorTimeSelf.Sector3');\r\n\r\nif ( stime == null || bstime == null || bstime < 0) {\r\n  return '#FFCCCCCC'; \r\n}\r\nif ( stime > bstime) {\r\n  return '#FFDAA520';\r\n}\r\nif ( stime < bstime) {\r\n  return '#FF00AC00';\r\n}\r\nreturn '#FFCCCCCC';"
                               },
                               "Mode": 2,
                               "TargetPropertyName": "TextColor"
@@ -9753,7 +9753,7 @@
                               "Formula": {
                                 "$id": "811",
                                 "Interpreter": 1,
-                                "Expression": "var stime = timespantoseconds( $prop( 'Sector3LastLapTime'));\r\nif ( stime != null) {\r\n  stime -= timespantoseconds( $prop( 'Sector2LastLapTime'));\r\n}\r\n\r\nvar bstime = $prop('GameRawData.BestIndividualSectorTimeSelf.Sector3')\r\n\r\nif ( stime  != null && \r\n     bstime != null &&\r\n     bstime >  0    &&\r\n     stime  <  bstime) {\r\n  return '#FFCCCCCC';\r\n}\r\nreturn '#FFBA55D3';\r\n"
+                                "Expression": "var stime  = timespantoseconds( $prop( 'Sector3LastLapTime'));\r\nvar bstime = $prop('GameRawData.BestIndividualSectorTimeSelf.Sector3')\r\n\r\nif ( stime  != null && \r\n     bstime != null &&\r\n     bstime >  0    &&\r\n     stime  <  bstime) {\r\n  return '#FFCCCCCC';\r\n}\r\nreturn '#FFBA55D3';\r\n"
                               },
                               "Mode": 2,
                               "TargetPropertyName": "TextColor"
