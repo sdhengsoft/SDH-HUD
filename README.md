@@ -10,7 +10,7 @@ HUD has only been tested with R3E.
 
 ## Installation ##
 
-- Install SimHub
+- Install SimHub V-7.4.8 or greater(https://www.simhubdash.com)
 - Import SDH-HUD by double-clicking "SDH-HUD-x.yy.simhubdash" file.
 
 ## Licence ##

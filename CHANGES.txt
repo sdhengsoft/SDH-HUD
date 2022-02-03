@@ -1,3 +1,22 @@
+2022.02.03	V-1.14
+  - Added logic to hide information that is not available during RRRE replays.
+  - Todo: add logic to hide information specific to RRRE in other games like AMS2.
+
+2022.01.28	V-1.13
+  - Incident points now blink when 80% of max available.
+  - P2P:
+    - Hidden when not equipped.
+	- Blank when not ready.
+	- Grey when available for use.
+	- Green and blink when enabled.
+	- Added number of uses remaining.
+  - DRS:
+    - Hidden when not equipped.
+	- Blank when not ready.
+	- Grey when available.
+	- Green and blink when enabled.
+	- Added number of uses remaining.
+
 2021.11.30	V-1.12
   - Added PushToPass (P2P) and DRS LEDs
 
