@@ -1,3 +1,8 @@
+2022.02.14	V-1.15
+  - All internal code updated to check for game 'RRRE' when using RRRE raw data.
+  - Above gets code ready for use in AMS2.
+  - Updated logic for RRRE in game replay mode.
+
 2022.02.03	V-1.14
   - Added logic to hide information that is not available during RRRE replays.
   - Todo: add logic to hide information specific to RRRE in other games like AMS2.
