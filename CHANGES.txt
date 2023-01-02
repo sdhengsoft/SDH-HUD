@@ -1,3 +1,7 @@
+2023.01.02  V-1.17
+  - Added slider for clutch with value. Found this useful for calibrating the friction point of twin clutch paddles.
+  - Added values to brake and throttle sliders.
+
 2022.08.14	V-1.16
   - Session name now displayed instead of just the word "Session".
   - Session text value now displays either remaining time or lap count depending on race setup.
