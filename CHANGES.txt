@@ -1,3 +1,12 @@
+2023.06.26  V-1.18
+  - Split pit window start/end times into two text labels.
+  - Added truck brake water available to car info box (top right)[R3E].
+  - Activated boost (push-to-pass) indicator for AMS2.
+  - Activated DRS indicator for AMS2.
+  - Updated FuelLapsRequired and FuelRequired to support fixed number of laps session. Previously only supported
+    timed sessions.
+  - Added fuel remaining time under fuel amount and fuel laps to go.
+
 2023.01.02  V-1.17
   - Added slider for clutch with value. Found this useful for calibrating the friction point of twin clutch paddles.
   - Added values to brake and throttle sliders.
