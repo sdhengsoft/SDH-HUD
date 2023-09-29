@@ -1,3 +1,7 @@
+2023.09.29  V-1.19
+  - Gear text blinks when in neutral. Useful to remind you to set a gear for standing start or exiting the pits.
+    I know I keep forgetting. How embarrassing!
+
 2023.06.26  V-1.18
   - Split pit window start/end times into two text labels.
   - Added truck brake water available to car info box (top right)[R3E].
