@@ -1,3 +1,9 @@
+2023.11.14  V-1.20
+  - Has been tested with Assetto Corsa (AC). All generic data works.
+  - Using new generic data source for dirt on tires LEDs. Should work across all sims.
+  - Added tire wear, tire temp and tire dirt values to tire LEDs.
+  - Defined update intervals for all widgets to improve performance.
+
 2023.09.29  V-1.19
   - Gear text blinks when in neutral. Useful to remind you to set a gear for standing start or exiting the pits.
     I know I keep forgetting. How embarrassing!
