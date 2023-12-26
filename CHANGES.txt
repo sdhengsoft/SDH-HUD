@@ -1,3 +1,10 @@
+2023.12.26  V-1.21
+  - Added "Invalid Lap" warning to penalties section.
+  - Added last lap tire wear under last lap fuel used.
+  - Added pitlane speed to speed gauge for info.
+  - Changed colour of tire temperatures to cyan.
+  - Removed use of local and global extensions from all Java scripts, introduced by SimHub update of Java processes.
+
 2023.11.14  V-1.20
   - Has been tested with Assetto Corsa (AC). All generic data works.
   - Using new generic data source for dirt on tires LEDs. Should work across all sims.

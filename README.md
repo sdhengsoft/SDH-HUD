@@ -5,8 +5,8 @@ SDH-HUD is an eRacing overlay for SimHub
 ![SDH-HUD Image](SDH-HUD.png?raw=true "SDH-HUD")
 
 ## Note ##
-Most of the HUD is not eRacing game specific. The tyre LEDs are currently specific to R3E.
-HUD has only been tested with R3E, AMS2 and AC.
+Most of the HUD is not eRacing Sim specific. The tire LEDs work across all Sims,
+but more features available in R3E. HUD has only been tested with R3E, AMS2 and AC.
 
 ## Installation ##
 
