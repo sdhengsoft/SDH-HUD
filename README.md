@@ -10,7 +10,7 @@ but more features available in R3E. HUD has only been tested with R3E, AMS2 and 
 
 ## Installation ##
 
-- Install SimHub V-7.4.8 or greater(https://www.simhubdash.com)
+- Install SimHub V-9.1.0 or greater(https://www.simhubdash.com)
 - Import SDH-HUD by double-clicking "SDH-HUD-x.yy.simhubdash" file.
 
 ## Licence ##
