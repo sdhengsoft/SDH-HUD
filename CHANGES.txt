@@ -1,8 +1,23 @@
+2024.0525 V-2.00
+  - Added safe buffer to fuel required info and fixed calculation/math issue.
+  - Added variable colour to tire wear value.
+  - Fixed deprecated use of PersistantTrackerPlugin.DriverAhead_00_Name/Gap, and others.
+  - Fixed driver ahead/behind times for R3E. Did not match driver name shown.
+    Was using driver ahead/behind on leader board and not actual driver ahead/behind.
+  - Adjusted formula for wheel locks.
+  - Added redline limit reached display for gear selection.
+  - Changed all fonts to "Roboto".
+  - Added driver position, last lap delta time and pit status to ahead/behind driver display.
+    Coloured green if player is faster, or red if slower.
+  - Pit window start/end times are now count down timers.
+  - Started using Dashboard Variables to compute common widget data (with update rate filtering).
+  - Added ABS level and moved TC, BB and EM levels.
+
 2023.12.26  V-1.21
   - Added "Invalid Lap" warning to penalties section.
   - Added last lap tire wear under last lap fuel used.
   - Added pitlane speed to speed gauge for info.
-  - Changed colour of tire temperatures to cyan.
+  - Changed colour of tire temperature text to cyan.
   - Removed use of local and global extensions from all Java scripts, introduced by SimHub update of Java processes.
 
 2023.11.14  V-1.20
