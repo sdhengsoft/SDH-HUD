@@ -1,6 +1,7 @@
 # SDH-HUD
 
 SDH-HUD is an eRacing overlay for SimHub
+(https://github.com/sdhengsoft/SDH-HUD)
 
 ![SDH-HUD Image](SDH-HUD.png?raw=true "SDH-HUD")
 
@@ -12,6 +13,7 @@ but more features available in R3E. HUD has only been tested with R3E, AMS2 and 
 
 - Install SimHub V-9.1.0 or greater(https://www.simhubdash.com)
 - Import SDH-HUD by double-clicking "SDH-HUD-x.yy.simhubdash" file.
+  Download latest version from: https://github.com/sdhengsoft/SDH-HUD/releases
 
 ## Licence ##
 
