@@ -1,7 +1,8 @@
 # SDH-HUD
 
 SDH-HUD is an eRacing overlay for SimHub
-(https://github.com/sdhengsoft/SDH-HUD)
+- Main page: https://github.com/sdhengsoft/SDH-HUD
+- Download page: https://github.com/sdhengsoft/SDH-HUD/releases
 
 ![SDH-HUD Image](SDH-HUD.png?raw=true "SDH-HUD")
 
