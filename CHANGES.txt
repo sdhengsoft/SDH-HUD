@@ -1,4 +1,11 @@
-2024.0525 V-2.00
+2024.06.18 V-2.01
+  - Moved pitlane speed to pit status section. Thanks RossAscends for that suggestion.
+  - Pitlane speed uses generic SimHub variable, except for RRRE.
+    The RRRE generic variable just returns null. Why???
+  - Slight update to ABS level for RRRE use.
+  - Tire wear previous lap is now maximum wear of any tire, rather than average.
+
+2024.05.25 V-2.00
   - Added safe buffer to fuel required info and fixed calculation/math issue.
   - Added variable colour to tire wear value.
   - Fixed deprecated use of PersistantTrackerPlugin.DriverAhead_00_Name/Gap, and others.
@@ -12,6 +19,8 @@
   - Pit window start/end times are now count down timers.
   - Started using Dashboard Variables to compute common widget data (with update rate filtering).
   - Added ABS level and moved TC, BB and EM levels.
+
+---
 
 2023.12.26  V-1.21
   - Added "Invalid Lap" warning to penalties section.
