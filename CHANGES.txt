@@ -1,3 +1,11 @@
+2024.11.11 V-2.03
+  - Still issues with delta times ahead/behind. Debugging with old method.
+  - Added estimated laps remaining under session time.
+  - R3E: SimHub API ABS level fix. Code adjusted.
+
+2024.07.23 V-2.02
+  - Minor fix to sdh_FuelLapsRequired dashboard variable calculation.
+
 2024.06.18 V-2.01
   - Moved pitlane speed to pit status section. Thanks RossAscends for that suggestion.
   - Pitlane speed uses generic SimHub variable, except for RRRE.
