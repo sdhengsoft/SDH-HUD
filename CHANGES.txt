@@ -1,3 +1,8 @@
+2024.12.14 V-2.04
+  - Fixes to estimated laps remaining logic.
+  - Added red pitlane limit warning box behind speed indicator.
+  - iRacing: Fixed session time/laps logic for displays and fuel calcs.
+
 2024.11.11 V-2.03
   - Still issues with delta times ahead/behind. Debugging with old method.
   - Added estimated laps remaining under session time.
