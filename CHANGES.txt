@@ -1,3 +1,9 @@
+2024.12.21 V-2.05
+  - Added red pitlane limit speed warning box behind speed indicator if pit limiter active or
+  - driver in pit lane when driver is over pitlane speed limit.
+  - Added use of "AllTimeBest" to timed session fuel calcs.
+  - Estimated laps remaining now calculated on new lap for timed sessions.
+
 2024.12.14 V-2.04
   - Fixes to estimated laps remaining logic.
   - Added red pitlane limit warning box behind speed indicator.
