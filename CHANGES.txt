@@ -1,3 +1,6 @@
+2025.01.11 V-2.06
+  - Added experimental position change indicators inside position box.
+
 2024.12.21 V-2.05
   - Added red pitlane limit speed warning box behind speed indicator if pit limiter active or
   - driver in pit lane when driver is over pitlane speed limit.
