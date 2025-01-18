@@ -1,9 +1,4 @@
 {
-  "SimHubVersion": "9.6.7",
-  "Category": "HUD",
-  "Title": "SDH - HUD",
-  "Description": "Advanced modified SimHub HUD1",
-  "Author": "SDHEngSoft",
   "ScreenCount": 1.0,
   "InGameScreensIndexs": [
     0
@@ -11,10 +6,16 @@
   "IdleScreensIndexs": [],
   "MainPreviewIndex": 0,
   "IsOverlay": true,
-  "Width": 775.0,
-  "Height": 255.0,
   "OverlaySizeWarning": false,
   "MetadataVersion": 2.0,
   "EnableOnDashboardMessaging": true,
-  "PitScreensIndexs": []
+  "PitScreensIndexs": [],
+  "SimHubVersion": "9.7.0",
+  "Category": "HUD",
+  "Title": "SDH - HUD",
+  "Description": "Advanced modified SimHub HUD1",
+  "Author": "SDHEngSoft",
+  "Width": 775.0,
+  "Height": 255.0,
+  "DashboardVersion": ""
 }

@@ -1,3 +1,10 @@
+2025.01.18 V-2.07
+  - Revised widget frequencies.
+  - Added display of delta incident points.
+  - Added fuel usage litres per minute.
+  - Predicted lap time now includes all defined sectors (iRacing may have 4 or more).
+  - Increased precision of lap fuel indicators and per lap tire wear.
+
 2025.01.11 V-2.06
   - Added experimental position change indicators inside position box.
 
