@@ -17,6 +17,9 @@ iRacing: Tire information only updates during pitstops and is an iRacing restric
 - Import SDH-HUD by double-clicking "SDH-HUD-x.yy.simhubdash" file.
   Download latest version from: https://github.com/sdhengsoft/SDH-HUD/releases
 
+## My Other SimHub Goodies ##
+Try SDH-LeaderboardDash... an eRacing leaderboard dash for SimHub (https://github.com/sdhengsoft/SDH-LeaderboardDash)
+
 ## Licence ##
 
 SDH-HUD is released under MIT licence:
