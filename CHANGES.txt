@@ -1,3 +1,16 @@
+2025.04.05 V-3.00
+  - Ahead/Behind widget now has 4 display options, switchable with next/prev screen button
+      1. Track position (default)
+      2. Leaderboard position
+      3. Class position
+      4. Class leaderboard
+  - Fixed a number of text boxes with not fully transparent backgrounds.
+  - Created sdh_sessionDuration.
+  - Updated sdh_sessionTimeElapsed function and applied to pit windows start/end logic.
+  - Pit window display now caters for fixed number of laps race.
+
+---
+
 2025.01.18 V-2.07
   - Revised widget frequencies.
   - Added display of delta incident points.
