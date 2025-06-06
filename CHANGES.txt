@@ -1,3 +1,10 @@
+2025.06.06 V-3.01
+  - DRS shows activations remaining and total remaining.
+  - P2P shows activations remaining and engaged amount remaining and wait time remaining.
+  - Fixed sdh_sessionDuration for R3E wait time for rolling starts.
+    This effected mandatory pitstop window countdown calculations.
+  - Turned off legacy javascript isolation.
+
 2025.04.05 V-3.00
   - Ahead/Behind widget now has 4 display options, switchable with next/prev screen button
       1. Track position (default)
