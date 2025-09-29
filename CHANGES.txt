@@ -1,3 +1,9 @@
+2025.09.29 V-3.04
+  - R3E shared memory API update changed penalty variables default value. Fix to penalty icons.
+  - Minor update to sector 3 last lap time colour.
+  - Added TestData widget. Checking wheel slip values. Hidden widget.
+  - Fixed missing variable definition in PositionStatus.
+
 2025.07.14 V-3.03
   - Minor fix to sector 3 delta times when last lap was null / zero.
   - Minor fix to sector 3 time colours for best lap and predicted lap.
