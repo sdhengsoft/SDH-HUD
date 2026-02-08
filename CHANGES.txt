@@ -1,3 +1,8 @@
+2026.02.08 V-3.05
+  - R3E: Added battery state of charge to support Hypercars, etc. (Need to check other sims).
+  - R3E: Added Virtual Energy (VE) remaining, VE use last lap, VE laps remaining using last lap VE.
+  - Minor fix to P2P and DRS TextWrapping not working; to get vertical text.
+
 2025.09.29 V-3.04
   - R3E shared memory API update changed penalty variables default value. Fix to penalty icons.
   - Minor update to sector 3 last lap time colour.
