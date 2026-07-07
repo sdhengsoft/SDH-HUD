@@ -1,3 +1,10 @@
+2026.07.07 V-3.06
+  - R3E: Push-to-pass LED now supports the new Electric Mini charge/ready/activation modes.
+  - R3E: Battery SoC/VE now supports the new Electric Mini and liquid fuel info hidden. Note VE=SoC.
+  - R3E: Background of sector time turns yellow on sector yellow flag.
+  - R3E: Added headlight led.
+  - iRacing+: Tracks with greater than 3 sectors are reduced to 3 even sectors by combining sectors.
+
 2026.02.08 V-3.05
   - R3E: Added battery state of charge to support Hypercars, etc. (Need to check other sims).
   - R3E: Added Virtual Energy (VE) remaining, VE use last lap, VE laps remaining using last lap VE.
