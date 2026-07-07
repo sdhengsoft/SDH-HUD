@@ -1,3 +1,7 @@
+2026.07.07 V-3.07
+  - Spotter arrows??
+  - iRacing: Minor update to sector splitting method (using round() instead of trunc()).
+
 2026.07.07 V-3.06
   - R3E: Push-to-pass LED now supports the new Electric Mini charge/ready/activation modes.
   - R3E: Battery SoC/VE now supports the new Electric Mini and liquid fuel info hidden. Note VE=SoC.
